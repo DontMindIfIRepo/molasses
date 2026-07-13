@@ -30,6 +30,7 @@ button.addEventListener("click", () => {
 
         button.style.display = "none";
         welcome.textContent = "Hi, " + user + "! Visit #1";
+        aftersetup.style.display = "";
     }
 });
 updateClock();
