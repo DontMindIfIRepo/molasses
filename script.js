@@ -26,11 +26,9 @@ button.addEventListener("click", () => {
     if (user !== null && user.trim() !== "") {
         localStorage.setItem("user", user);
 
-        localStorage.setItem("visits", 1);
+        localStorage.setItem("visits", 0);
 
-        button.style.display = "none";
-        welcome.textContent = "Hi, " + user + "! Visit #1";
-        aftersetup.style.display = "";
+        location.reload()
     }
 });
 updateClock();
